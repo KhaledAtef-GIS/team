@@ -29,3 +29,10 @@ Example: `travel_matrix_5975371.txt`
 
 #### 🧾 Expected File Format (`;`-delimited)
 
+#### ✅ Response
+
+Returns simple text confirmation:
+
+```json
+"All is good"
+
