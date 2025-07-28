@@ -1,0 +1,19 @@
+{
+	"info": {
+		"_postman_id": "e455bab1-ab51-4761-9d6a-62181089b144",
+		"name": "AccessViz Travel Matrix API",
+		"description": "Upload travel time matrices and generate GPKG + PNG heatmaps.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46283688"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

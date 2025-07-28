@@ -1,22 +1,24 @@
 # 🚗 Travel Matrix Access Visualization API
 
+![Travel Matrix Example](./DATA/5785640_car_r_t.png)
+
 This API allows uploading `.txt` travel time matrix files (e.g. from Helsinki Region Travel Time Matrix), processes them by spatially joining them with a zone grid, and generates **PNG heatmaps** of car travel times.
 
 ---
 
-## 🧠 What It Does
+## 🧠 What It Does ?
 
-1. Accepts one or more matrix files (`.txt`) with travel time values.
-2. Extracts the destination zone (`YKR_ID`) from the filename.
-3. Joins each matrix with a Helsinki grid shapefile (`MetropAccess_YKR_grid_EurefFIN.shp`).
-4. Exports the result as a `.gpkg` file (GeoPackage).
-5. Plots a map of car travel times and saves it as a `.png`.
+> Accepts one or more matrix files (`.txt`) with travel time values.
+> Extracts the destination zone (`YKR_ID`) from the filename.
+> Joins each matrix with a Helsinki grid shapefile (`MetropAccess_YKR_grid_EurefFIN.shp`).
+> Exports the result as a `.gpkg` file (GeoPackage).
+> Plots a map of car travel times and saves it as a `.png`.
 
 ---
 
 ## 🚀 Endpoint
 
-### `POST /AccessViz`
+### `POST Method --> /AccessViz`
 
 Upload one or more `.txt` travel matrix files.
 
@@ -27,12 +29,11 @@ Upload one or more `.txt` travel matrix files.
 Each file must be named like: `travel_matrix_<ykr_id>.txt`  
 Example: `travel_matrix_5975371.txt`
 
-#### 🧾 Expected File Format (`;`-delimited)
-
 #### ✅ Response
 
 Returns simple text confirmation:
 
 ```json
 "All is good"
+```
 
