@@ -29,6 +29,14 @@ Upload one or more `.txt` travel matrix files.
 Each file must be named like: `travel_matrix_<ykr_id>.txt`  
 Example: `travel_matrix_5975371.txt`
 
+## 🧱 Dependencies
+
+This API depends on a preloaded shapefile:
+
+- [`MetropAccess_YKR_grid_EurefFIN.shp`](https://drive.google.com/file/d/17d7fFx2pKpjeCrHpzscrz37AqujqFLov/view)  
+  > Download and extract this grid file into the `./DATA/` folder. The path is hardcoded in the script.
+
+
 #### ✅ Response
 
 Returns simple text confirmation:
